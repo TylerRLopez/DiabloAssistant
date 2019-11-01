@@ -1,0 +1,116 @@
+/* ELEMENT SELECTORS */
+body {
+    background-color: #D5D5D5;
+    color: #000000;
+    margin: 10px;
+    border: 5px solid #6d7993;
+    padding: 15px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+p {
+    color: #000000;
+}
+table, th, td {
+    border: solid 1px #96858F;
+    padding: 4px;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+th {
+    background-color: #9099A2;
+    color: #000000;
+    text-align: left;
+    white-space: nowrap;
+}
+
+td {
+    white-space: normal;
+}
+
+
+nav a, aside a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #6d7993;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #6d7993;
+    text-align: center;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+img {
+    padding: 10px;
+    border: 1px solid #000000;
+    float: right;
+}
+
+li {
+    display: block;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+/* CLASS SELECTORS */
+.error {color: #ff0000; padding: 3px;}
+.success {color: #1c891b; padding: 3px;}
+
+/* PSEUDO-CLASS SELECTORS */
+a:link {
+    color: #6d7993;
+}
+a:visited {
+    color: #96858F;
+}
+a:hover {
+    color: #D5D5D5;
+    background-color: #6d7993;
+}
+a:active {
+    color: #D5D5D5;
+    background-color: #96858F;
+}
+
+/* CONTEXTUAL SELECTORS */
+
+header li {
+    display: inline;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    padding: 5px;
+}
+
+nav a:link {
+    color: #d5d5d5;
+    background-color: #9099a2;
+    text-decoration: none;
+}
+nav a:visited {
+    color: #d5d5d5;
+    background-color: #9099a2;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #000000;
+    background-color: #96858F;
+}
+nav a:active {
+    color: #96858F;
+    background-color: #000000;
+}

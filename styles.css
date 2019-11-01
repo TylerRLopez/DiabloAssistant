@@ -1,0 +1,203 @@
+/*RESET CSS*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
+body { line-height: 1;}
+ol,ul { list-style: none;}
+blockquote,q { quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
+table { border-collapse: collapse; border-spacing: 0;}
+
+/*Start Page*/
+body {
+    display: grid;
+    grid-template-areas:
+        "h h h h h h h h h h h"
+        ". . m m m m m m m . ."
+        ". . m m m m m m m . ."
+        ". . m m m m m m m . ."
+        ". . m m m m m m m . ."
+        "f f f f f f f f f f f";
+    grid-gap: 1.5em;
+
+    background-color: rgba(173, 216, 230, 0.6);
+
+    color: black;
+
+}
+
+
+/*Header*/
+header {
+    border-bottom: 1px solid grey;
+    grid-area: h;
+    background: rgba(211, 211, 211, 0.66);
+    padding: 1em;
+}
+
+/*Nav formating*/
+.nav {
+    display: flex;
+    padding-left: 10em;
+    padding-right: 10em;
+
+}
+
+.nav div {
+    font-size: 1.2em;
+    font-family: Georgia, serif;
+    padding: .7em;
+}
+
+.navLeft {
+    display: flex;
+    margin-left: auto;
+}
+.leftMarginDelete {
+    margin-left: 0%;
+}
+
+.nav a:link, a:visited {
+    color: black;
+}
+
+.nav a:active {
+    color: white;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+/*Main general formating for all pages*/
+main {
+    grid-area: m;
+    padding: 1em;
+}
+
+main .content {
+    padding-top: 1.2em;
+    padding-left: 1em;
+    line-height: 1.3em;
+    font-size: 1em;
+    font-family: Arial, serif;
+}
+
+main li {
+    list-style-type: circle;
+}
+
+main ul {
+    padding-left: 3em;
+}
+
+#title {
+    font-family: "Times New Roman", serif;
+    font-size: 2.5em;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+main br {
+    line-height: .7em;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 1.2em;
+}
+
+th {
+    text-align: right;
+}
+
+/*Index Page*/
+.indent {
+    padding-left: 2em;
+}
+
+.information {
+    font-size: 1.5em;
+}
+
+
+
+/*Registration Page*/
+#registerSubmit {
+    padding: .5em 11.8em;
+    cursor: pointer;
+}
+
+#registerTable #email {
+    width: 15.3em;
+}
+
+#pwdInformation{
+    color: #787878;
+}
+
+/*Login Page*/
+#loginSubmit {
+    padding: .5em 2.5em;
+    cursor: pointer;
+}
+
+/*Contact*/
+#contactSubmit {
+    padding: .5em 20em;
+    cursor: pointer;
+}
+
+#contactTable #subject, #email {
+    width: 30em;
+}
+
+/* FORUM PAGE */
+.forumTitle {
+    font-size: 1.3em;
+}
+
+.forumTable {
+    font-size: 1em;
+}
+
+.forumTable th {
+    text-align: left;
+}
+
+.title {
+    text-decoration: underline;
+}
+
+.forumContentIndent {
+    border-left: 4px solid #bababa;
+    padding-left: .5em;
+    margin-left: 1.5em;
+}
+
+#bugs {
+     display:none;
+}
+
+#comments {
+    display:none;
+}
+
+#tips {
+    display:none;
+}
+
+#suggestions {
+    display:none;
+}
+
+#bugPostButtonTable {
+    padding: .5em 20em;
+}
+
+/*Footer*/
+footer {
+    grid-area: f;
+}
